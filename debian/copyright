@@ -1,0 +1,137 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Shapefile C Library
+Upstream-Contact: Frank Warmerdam <warmerdam@pobox.com>
+Source: https://download.osgeo.org/shapelib/
+
+Files: *
+Copyright: 2012-2016, Even Rouault <even dot rouault at mines-paris dot org>
+           1999-2013, Frank Warmerdam <warmedam@pobox.com>
+                2005, Springs Rescue Mission
+                2004, Eric Miller
+                2004, Marco Podgorsek
+                2002, Kevin Meyer
+                1999, Carl Anderson
+          1992, 1996, Free Software Foundation
+License: Expat or LGPL-2+
+
+Files: CMakeLists.txt
+Copyright: 2012-2013 Alan W. Irwin
+License: GPL-2
+
+Files: contrib/dbfcat.c
+Copyright: 1995, Frank Warmerdam
+License: public-domain
+ This code is in the public domain.
+
+Files: contrib/dbfinfo.c
+Copyright: 1999, Carl Anderson
+License: public-domain
+ This code is in the public domain.
+ .
+ This code is based in part on the earlier work of Frank Warmerdam
+
+Files: contrib/ShapeFileII.pas
+Copyright: 2002, Keven Meyer <Kevin@CyberTracker.co.za>
+License: Expat or LGPL-2+
+
+Files: contrib/Shape_PointInPoly.cpp
+Copyright: 2004, Marko Podgorsek <d-mon@siol.net>
+License: Expat or LGPL-2+
+
+Files: contrib/shpcat.c
+ contrib/shpcentrd.c
+ contrib/shpdata.c
+ contrib/shpdxf.c
+ contrib/shpfix.c
+ contrib/shpgeo.c
+ contrib/shpgeo.h
+ contrib/shpinfo.c
+ contrib/shpwkb.c
+Copyright: 1999, Carl Anderson
+License: Expat
+
+Files: contrib/shpsort.c
+Copyright: 2004, Eric G. Miller
+License: Expat
+
+Files: sbnsearch.c
+Copyright: 2012-2014, Even Rouault <even dot rouault at mines-paris dot org>
+License: Expat
+
+Files: debian/*
+Copyright: 2012, Francesco Paolo Lovergine <frankie@debian.org>
+           2010, DebianGis contributors <pkg-grass-devel@lists.alioth.debian.org>
+License: GPL-3+
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ On Debian systems, the full text of the GNU Library General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/LGPL-2'.
+
+License: GPL-2
+ This file is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Library General Public License as published
+ by the Free Software Foundation; version 2 of the License.
+ .
+ This file is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this file; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License can be found in `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the complete text of the GPL-3 License can be
+ found in `/usr/share/common-licenses/GPL-3'.
+

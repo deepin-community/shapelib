@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+
+# Enable hardening build flags
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
+
+include /usr/share/dpkg/pkg-info.mk
+
+BUILD_DATE := $(shell LC_ALL=C date -u "+%Y-%m-%d" -d "@$(SOURCE_DATE_EPOCH)")
+
+UPSTREAM_VERSION = $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e 's/\+.*//')
+
+%:
+	dh $@
+
+override_dh_clean:
+	dh_clean debian/man/*.1
+
+override_dh_auto_build:
+	dh_auto_build
+	ronn -r --date="$(BUILD_DATE)" --manual=shplib debian/man/*.md
+
+override_dh_auto_install:
+	dh_auto_install
+
+	# Don't install .la files
+	$(RM) debian/*/usr/lib/*/*.la
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_makeshlibs:
+	dh_makeshlibs -- -v$(UPSTREAM_VERSION)

@@ -1,0 +1,54 @@
+Source: shapelib
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Francesco Paolo Lovergine <frankie@debian.org>,
+           Bas Couwenberg <sebastic@debian.org>
+Section: libs
+Priority: optional
+Build-Depends: debhelper (>= 10~),
+               ronn (>= 0.9.0)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/debian-gis-team/shapelib
+Vcs-Git: https://salsa.debian.org/debian-gis-team/shapelib.git
+Homepage: http://shapelib.maptools.org/
+
+Package: shapelib
+Architecture: any
+Multi-Arch: foreign
+Section: graphics
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Library for reading and writing ESRI Shapefiles - tools
+ The Shapefile format is a working and interchange format promoted by
+ ESRI for simple vector data with attributes. It is apparently the only
+ file format that can be edited in ARCView 2/3, and can also be exported
+ and imported in ArcGis.
+ .
+ This package contains a useful set of tools to manage shapefiles.
+
+Package: libshp-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libshp2 (= ${binary:Version}),
+         ${misc:Depends}
+Description: Library for reading and writing ESRI Shapefiles - development files
+ The Shapefile format is a working and interchange format promoted by
+ ESRI for simple vector data with attributes. It is apparently the only
+ file format that can be edited in ARCView 2/3, and can also be exported
+ and imported in ArcGis.
+ .
+ This package includes the development files.
+
+Package: libshp2
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: Library for reading and writing ESRI Shapefiles
+ The Shapefile format is a working and interchange format promoted by
+ ESRI for simple vector data with attributes. It is apparently the only
+ file format that can be edited in ARCView 2/3, and can also be exported
+ and imported in ArcGis.
+ .
+ This package includes the shared library.
